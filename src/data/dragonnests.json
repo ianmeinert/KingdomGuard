@@ -1,0 +1,22 @@
+[
+    {
+        "name":"name",
+        "type":"Archer",
+        "level":"0"
+    },
+    {
+        "name":"name",
+        "type":"Fire",
+        "level":"0"
+    },
+    {
+        "name":"name",
+        "type":"Ice",
+        "level":"0"
+    },
+    {
+        "name":"name",
+        "type":"Goblin",
+        "level":"0"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "frame": [
+            {
+                "slot":"0",
+                "owned":"0"
+            }
+        ],
+        "scenery":"0",
+        "castle": [
+            {
+                "overall":"0",
+                "type": [
+                    {
+                        "name":"",
+                        "percent":"0"
+                    }
+                ]
+            }
+        ]
+    }
+]
