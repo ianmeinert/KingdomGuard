@@ -1,6 +1,7 @@
 <script>
-    export let type 
     import { createEventDispatcher } from 'svelte';
+    
+    export let type 
 
     let level
     const dispatch = createEventDispatcher();

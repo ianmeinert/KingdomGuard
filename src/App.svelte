@@ -4,10 +4,11 @@
 	import Dragonnest from "./components/dragonnest.svelte";
 	import Hero from "./components/hero.svelte";
 	import Select from 'svelte-select'
+	import Skin from "./components/skin.svelte";
 	
 	let dnlist = dragonnests;
-	const heroOptions = heros.map(hero => hero.name);
 	let selected;
+	let skin;
 	
 	const groupBy = (hero) => hero.type;
 	const optionIdentifier = 'name';
@@ -16,6 +17,11 @@
 
 	function handleSelect(event) {
 		selected = event.detail;
+	}
+
+	function handleSkin(event) {
+		skin = event.detail.frame;
+		console.log(skin);
 	}
 
 	function handleLevel(event) {
@@ -46,13 +52,20 @@
 		<h2>Hero Bond Calculator</h2>
 	</div>
 	<div class="container dncontainer">
-		<h3>Dragon nest Bonus:</h3>
+		<h3>Dragon Nest Bonus:</h3>
 		{#each dnlist as dn}
 			<div class="dn">
 				<Dragonnest type={dn.type} on:level={handleLevel} />
 				<p>{dn.type}: {dn.level}%</p>
 			</div>
 		{/each}
+	</div>
+
+	<div class="skincontainer container">
+		<h3>Skin Bonus:</h3>
+		<div class="skin">
+			<Skin on:skin={handleSkin}/>
+		</div>
 	</div>
 
 	<div class="herocontainer container">
@@ -78,7 +91,8 @@
 
 <style>
 
-	main {
+	
+main {
 		text-align: center;
 		padding: 1em;
 		max-width: 1024px;
@@ -133,6 +147,7 @@
   		width: auto;
 		padding: 25px;
 	}
+
 	.herocontainer:after {
 		content: "";
 		display: table;
@@ -142,6 +157,18 @@
 
 	.herocontainer div img {  
 		object-fit: cover;  
+	}
+
+	.skin {
+		float: left;
+  		width: 33%;
+	}
+
+	.skincontainer:after {
+		content: "";
+		display: table;
+		clear: both;
+		width: 500px;
 	}
 
 	label {
