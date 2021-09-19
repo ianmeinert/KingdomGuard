@@ -1,0 +1,15 @@
+{
+    "dragon":"",
+    "academy":{
+        "archer":"",
+        "fire":"",
+        "goblin":"",
+        "ice":""
+    },
+    "barracks":{
+        "archer":"",
+        "fire":"",
+        "goblin":"",
+        "ice":""
+    }
+}

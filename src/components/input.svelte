@@ -1,13 +1,14 @@
 <script>
     import { createEventDispatcher } from 'svelte';
     
-    export let type 
+    export let type;
+    export let path;
 
-    let level
+    let level;
     const dispatch = createEventDispatcher();
 
     function updateLevel() {
-        dispatch('level', {
+        dispatch(type, {
             text: level,
             type: type
         });
@@ -15,11 +16,11 @@
 
 </script>
 <div>
-    <h4>{type} Dragon Nest</h4>
-    <img src="images/alliance/DragonNest.jpg" alt="dragon nest"/>
-    <label for="dnlevel">
-        Combined level: 
-        <input type="text" id="dnlevel" name="dnlevel" bind:value={level} on:change="{updateLevel}">
+    <h4>{type}</h4>
+    <img src="images/{path}/{type}.jpg" alt="{type}"/>
+    <label for="level">
+        Level: 
+        <input type="text" id="level" name="level" bind:value={level} on:change="{updateLevel}">
     </label>
     
 </div>

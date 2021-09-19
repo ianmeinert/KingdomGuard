@@ -1,14 +1,16 @@
 <script>
+	import Select from 'svelte-select'
 	import dragonnests from "./data/dragonnests.json"
 	import heros from "./data/heros.json";
 	import Dragonnest from "./components/dragonnest.svelte";
 	import Hero from "./components/hero.svelte";
-	import Select from 'svelte-select'
 	import Skin from "./components/skin.svelte";
+	import Tech from "./components/tech.svelte";
 	
 	let dnlist = dragonnests;
 	let selected;
-	let skin;
+	let skins;
+	let tech;
 	
 	const groupBy = (hero) => hero.type;
 	const optionIdentifier = 'name';
@@ -17,11 +19,17 @@
 
 	function handleSelect(event) {
 		selected = event.detail;
+		console.log(selected);
 	}
 
-	function handleSkin(event) {
-		skin = event.detail.frame;
-		console.log(skin);
+	function handleSkin(event) {		
+		skins = event.detail.skins;
+		console.log(skins);
+	}
+
+	function handleTech(event) {		
+		tech = event.detail.tech;
+		console.log(tech);
 	}
 
 	function handleLevel(event) {
@@ -30,26 +38,28 @@
 			"level":event.detail.text
 		}
 
-		const searchIndex = dnlist.findIndex((dn) => dn.type == dnIncoming.type);
-		console.log(searchIndex);
-
 		dnlist.forEach(item => {
-					console.log("in foreach");
 					if (item.type == dnIncoming.type)  {
-						console.log("type found");
 						item.level = dnIncoming.level;
 					}
 				});	
 
 		dnlist = dnlist;
+		console.log(dnlist);
 	}
 
 </script>
 
 <main>
-	<div class="header">
+	<div id="header">
 		<h1>Kingdom Guard</h1>
 		<h2>Hero Bond Calculator</h2>
+		<div id="links">
+			 | <a href="https://github.com/ianmeinert/KingdomGuard/issues" target="_blank" rel="noopener">Find a bug?</a> 
+			 | <a href="https://cash.app/$PogLife4Me" target="_blank" rel="noopener">
+				<img src="/images/CashApp.jpg" alt="CashApp" width="15px">
+				CashApp</a> |
+		</div>
 	</div>
 	<div class="container dncontainer">
 		<h3>Dragon Nest Bonus:</h3>
@@ -63,8 +73,15 @@
 
 	<div class="skincontainer container">
 		<h3>Skin Bonus:</h3>
-		<div class="skin">
+		<div>
 			<Skin on:skin={handleSkin}/>
+		</div>
+	</div>
+
+	<div class="techcontainer container">
+		<h3>Tech Bonus:</h3>
+		<div>
+			<Tech on:tech={handleTech}/>
 		</div>
 	</div>
 
@@ -90,22 +107,14 @@
 </main>
 
 <style>
-
 	
-main {
-		text-align: center;
-		padding: 1em;
-		max-width: 1024px;
-		min-height: 1250px;
-		margin: 0 auto;
-	}
-	div.header {
-		background-image: url("/images/HeroesBounds.png");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size:contain;
-		opacity: 0.60;
-	}
+	main {
+			text-align: center;
+			padding: 1em;
+			max-width: 1024px;
+			min-height: 1250px;
+			margin: 0 auto;
+		}
 
 	h1 {
 		color: #ff3e00;
@@ -127,9 +136,17 @@ main {
 		font-weight: 100;
 	}
 
+	#header {
+		padding-bottom:25px;
+	}
+
+	#links {
+		float: right;
+	}
+
 	.dn {
 		float: left;
-  		width: 25%;
+		width: 25%;
 	}
 	.container {
 		border: 3px solid chocolate;
@@ -144,7 +161,7 @@ main {
 
 	.hero {
 		float: left;
-  		width: auto;
+		width: auto;
 		padding: 25px;
 	}
 
@@ -159,21 +176,13 @@ main {
 		object-fit: cover;  
 	}
 
-	.skin {
-		float: left;
-  		width: 33%;
-	}
-
-	.skincontainer:after {
-		content: "";
-		display: table;
-		clear: both;
-		width: 500px;
-	}
-
 	label {
 		text-align:left;
 		margin: 0 0 10px;
+	}
+
+	img {
+		border-radius: 10px 10px 10px 10px;
 	}
 
 </style>

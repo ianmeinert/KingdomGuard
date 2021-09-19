@@ -32,8 +32,9 @@
         width: 100%;
     }
     img {
-        max-width: 100px;
+        max-height: 100px;
         height: auto;
+        border-radius: 10px 10px 10px 10px;
     }
     input {
         width: 50px;
