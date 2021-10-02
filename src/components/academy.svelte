@@ -6,7 +6,7 @@
 <div>
     <h4>Academy Bonus</h4>
 
-    <img src="images/tech/Barracks.jpg" alt="Frame"/>
+    <img src="images/tech/Academy.jpg" alt="Frame"/>
     <div class="divTable">
         <div class="divTableBody">
             <div class="divTableRow">
