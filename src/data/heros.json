@@ -2,141 +2,729 @@
   {
     "category": "SR",
     "type": "Goblin",
-    "name": "Alucard"
+    "name": "Alucard",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "R",
     "type": "Fire",
-    "name": "Anton"
+    "name": "Anton",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Archer",
-    "name": "Ariza"
+    "name": "Ariza",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Archer",
-    "name": "Arthur"
+    "name": "Arthur",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SR",
     "type": "Archer",
-    "name": "Arwyn"
+    "name": "Arwyn",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Goblin",
-    "name": "Catherine"
+    "name": "Catherine",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Goblin",
-    "name": "Claudia"
+    "name": "Claudia",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Fire",
-    "name": "Cosette"
+    "name": "Cosette",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "N",
     "type": "Goblin",
-    "name": "Daniel"
+    "name": "Daniel",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Fire",
-    "name": "Dolvar"
+    "name": "Dolvar",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Fire",
-    "name": "Ellen"
+    "name": "Ellen",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Fire",
-    "name": "Erica"
+    "name": "Erica",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "R",
     "type": "Ice",
-    "name": "Etley"
+    "name": "Etley",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Archer",
-    "name": "Gabriel"
+    "name": "Gabriel",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Fire",
-    "name": "Gro"
+    "name": "Gro",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Ice",
-    "name": "Hadi"
+    "name": "Hadi",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SR",
     "type": "Archer",
-    "name": "Harold"
+    "name": "Harold",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Goblin",
-    "name": "Isaac"
+    "name": "Isaac",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Archer",
-    "name": "Jennifer"
+    "name": "Jennifer",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SR",
     "type": "Fire",
-    "name": "Kris"
+    "name": "Kris",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SR",
     "type": "Ice",
-    "name": "Merlin"
+    "name": "Merlin",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Ice",
-    "name": "Nicole"
+    "name": "Nicole",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Archer",
-    "name": "Oneill"
+    "name": "Oneill",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SR",
     "type": "Fire",
-    "name": "Ophelia"
+    "name": "Ophelia",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Ice",
-    "name": "Paula"
+    "name": "Paula",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "R",
     "type": "Goblin",
-    "name": "Peter"
+    "name": "Peter",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Ice",
-    "name": "Ralph"
+    "name": "Ralph",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   },
   {
     "category": "SSR",
     "type": "Goblin",
-    "name": "Rosamund"
+    "name": "Rosamund",
+    "stats": {
+      "unit":{
+        "base":"",
+        "evolution":"",
+        "talent":""
+      },
+      "hero": {
+        "base":"",
+        "star":"",
+        "skill":""
+      },
+      "power":{
+        "dragon":"",
+        "tech":"",
+        "bonds":"",
+        "skin":"",
+        "alliancebldg":"",
+        "vip":"",
+        "totalattack":""
+      }
+    }
   }
 ]

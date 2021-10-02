@@ -1,13 +1,23 @@
 <script>
-    export let heroname;
-    export let category;
-    export let type;
-    export let dnlevel;
+	import { onMount } from 'svelte';
+	import heros from "../data/heros.json";
 
-    let heroimage = heroname + "Hero.png"
-    let typeimage = type + ".png"
+    export let heroname; 
+    export let dnlevel;
+    let herolist = [];
+    let hero = {};
+    
+    onMount(async () => {
+		herolist = heros.filter(
+            function(heros){ return heros.name == heroname }
+        );
+        hero = herolist[0];
+	});
+   
 </script>
 
-<p><img src="/images/type/{typeimage}" alt="{type}" width="25px"/>Bonus {dnlevel}%</p>
-<img src="/images/hero/{heroimage}" alt="{heroname}" />
-<h3>{category} {heroname} ({type})</h3>
+{#if hero && hero.name && hero.type}
+<p><img src="/images/type/{hero.type}.png" alt="{hero.type}" width="25px"/>Bonus {dnlevel}%</p>
+<img src="/images/hero/{hero.name}Hero.png" alt="{hero.name}" />
+<h3>{hero.category} {hero.name} ({hero.type})</h3>
+{/if}
