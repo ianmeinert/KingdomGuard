@@ -4,12 +4,12 @@
     export let type;
     export let path;
 
-    let level;
+    export let value;
     const dispatch = createEventDispatcher();
 
-    function updateLevel() {
+    function updateValue() {
         dispatch(type, {
-            text: level,
+            text: value,
             type: type
         });
     }
@@ -18,9 +18,9 @@
 <div>
     <h4>{type}</h4>
     <img src="images/{path}/{type}.jpg" alt="{type}"/>
-    <label for="level">
+    <label for="value">
         Level: 
-        <input type="text" id="level" name="level" bind:value={level} on:change="{updateLevel}">
+        <input type="text" id="level" name="level" bind:value={value} on:change="{updateValue}">
     </label>
     
 </div>

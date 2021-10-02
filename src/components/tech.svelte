@@ -1,5 +1,5 @@
 <script>
-    import { createEventDispatcher, onMount, setContext, getContext  } from 'svelte';
+    import { createEventDispatcher, onMount } from 'svelte';
     import techjson from '../data/tech.json';
     import Input from "./input.svelte";
     import Academy from "./academy.svelte";
@@ -37,7 +37,7 @@
         <Input bind:value={tech.dragon} type="Dragon" path="tech" on:Dragon="{updateTech}" />
     </div>
     <div class="skin">
-        <!-- <Academy bind:value={tech.troops} on:academy="{updateTech}" /> -->
+        <Academy bind:troops={tech.troops} />
     </div>
     <div class="skin">
         <Barracks bind:troops={tech.troops}/>

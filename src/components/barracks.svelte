@@ -1,6 +1,4 @@
-<script>
-    import { getContext, setContext } from 'svelte';
-    
+<script>    
     export let troops;
 
 </script>
