@@ -1,6 +1,5 @@
 <script>    
-    export let troops;
-
+    export let tech;
 </script>
 
 <div>
@@ -13,7 +12,7 @@
                 <div class="divTableCell">&nbsp;</div>
                 <div class="divTableCell">Bonus</div>
             </div>
-            {#each troops as troop}
+            {#each tech.troops as troop}
                 <div class="divTableRow">
                     <div class="divTableCell">{troop.text}</div>
                     <div class="divTableCell">
@@ -21,7 +20,14 @@
                             bind:value="{troop.academy}">
                     </div>
                 </div>
-            {/each}       
+            {/each}
+            <div class="divTableRow">
+                <div class="divTableCell">Troop Capacity</div>
+                <div class="divTableCell">
+                    <input type="text" id="capacity" name="capacity"
+                        bind:value="{tech.capacity}">
+                </div>
+            </div>   
         </div>
     </div>
 </div>

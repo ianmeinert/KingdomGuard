@@ -6,11 +6,13 @@
 	import Hero from "./components/hero.svelte";
 	import Skin from "./components/skin.svelte";
 	import Tech from "./components/tech.svelte";
+	import Castle from "./components/castle.svelte";
 	
 	let dnlist = dragonnests;
 	let selected;
 	let skins;
 	let tech;
+	let castlelevel;
 	
 	const groupBy = (hero) => hero.type;
 	const optionIdentifier = 'name';
@@ -61,6 +63,14 @@
 				CashApp</a> |
 		</div>
 	</div>
+
+	<div class="container castlecontainer">
+		<h3>Castle Level</h3>
+		<div>			
+			<Castle bind:value={castlelevel} />
+		</div>
+	</div>
+
 	<div class="container dncontainer">
 		<h3>Dragon Nest Bonus:</h3>
 		{#each dnlist as dn}

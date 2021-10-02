@@ -34,10 +34,10 @@
 </script>
 <div class="skincontainer">
     <div class="skin">
-        <Input bind:value={tech.dragon} type="Dragon" path="tech" on:Dragon="{updateTech}" />
+        <Input bind:value={tech.dragon} type="Dragon Den" path="tech" on:Dragon="{updateTech}" />
     </div>
     <div class="skin">
-        <Academy bind:troops={tech.troops} />
+        <Academy bind:tech={tech} />
     </div>
     <div class="skin">
         <Barracks bind:troops={tech.troops}/>

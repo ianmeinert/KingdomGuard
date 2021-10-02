@@ -2,7 +2,7 @@
     import { createEventDispatcher } from 'svelte';
 	import skins from "../data/skins.json";
     import Frame from "./frame.svelte";
-    import Castle from "./castle.svelte";
+    import CastleSkin from "./castleskin.svelte";
     import Input from "./input.svelte";
 
     const dispatch = createEventDispatcher();
@@ -35,7 +35,7 @@
         <Input type="Scenery" path="skins" on:Scenery="{updateSceneryPower}" />
     </div>
     <div class="skin">
-        <Castle on:castle="{updateCastlePower}" />
+        <CastleSkin on:castle="{updateCastlePower}" />
     </div>
 </div> 
 
