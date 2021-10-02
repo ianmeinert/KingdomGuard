@@ -1,26 +1,29 @@
 <script>
-    import { createEventDispatcher } from 'svelte';
+    import { createEventDispatcher, onMount, setContext, getContext  } from 'svelte';
     import techjson from '../data/tech.json';
     import Input from "./input.svelte";
     import Academy from "./academy.svelte";
     import Barracks from "./barracks.svelte";
 
+    let tech = techjson;
     const dispatch = createEventDispatcher();
 
-    let tech = techjson;
-
-    function updateDragonPower(event) {
-        tech.dragon = event.detail.text;
-        updateTech()
-    }
-    function updateAcademyPower(event) {
-        tech.academy = event.detail.academy;
-        updateTech()
-    }
-    function updateBarracksPower(event) {
-        tech.barracks = event.detail.barracks;
-        updateTech()
-    }
+    onMount(async () => {
+        types = ["Fire","Ice","Archer","Goblin"];
+        tech.troops = []
+        types.forEach( type => {     
+            let troop = {
+                "text":"",
+                "academy":"",
+                "barracks": {
+                    "talent":"",
+                    "level":""
+                }
+            };       
+            troop.text = type;
+            tech.troops.push(troop)
+        });
+    });
 
     function updateTech() {
         dispatch('tech', {
@@ -31,13 +34,13 @@
 </script>
 <div class="skincontainer">
     <div class="skin">
-        <Input type="Dragon" path="tech" on:Dragon="{updateDragonPower}" />
+        <Input bind:value={tech.dragon} type="Dragon" path="tech" on:Dragon="{updateTech}" />
     </div>
     <div class="skin">
-        <Academy on:academy="{updateAcademyPower}" />
+        <!-- <Academy bind:value={tech.troops} on:academy="{updateTech}" /> -->
     </div>
     <div class="skin">
-        <Barracks on:barracks="{updateBarracksPower}" />
+        <Barracks bind:troops={tech.troops}/>
     </div>
 </div> 
 

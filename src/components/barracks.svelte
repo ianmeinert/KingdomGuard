@@ -1,57 +1,38 @@
 <script>
-    import { createEventDispatcher } from 'svelte';
-    import tech from '../data/tech.json';
+    import { getContext, setContext } from 'svelte';
     
-    const dispatch = createEventDispatcher();
-    let barracks = tech.barracks;
+    export let troops;
 
-    function updateArcher() {
-        updatePower();
-    }
-
-    function updateFire() {
-        updatePower();
-    }
-
-    function updateGoblin() {
-        updatePower();
-    }
-
-    function updateIce() {
-        updatePower();
-    }
-
-    function updatePower() {
-        dispatch('barracks', {
-            barracks: tech.barracks
-        });
-    }
 </script>
 
 <div>
     <h4>Barracks Bonus</h4>
+
     <img src="images/tech/Barracks.jpg" alt="Frame"/>
-    <label for="archer">Archer Level:
-        <input type="text" id="archer" name="archer"
-            bind:value={barracks.archer} on:change="{updateArcher}">
-    </label>
-    <label for="fire">Fire Level
-        <input type="text" id="fire" name="fire"
-            bind:value={barracks.fire} on:change="{updateFire}">
-    </label>
-    <label for="goblin">Goblin Level
-        <input type="text" id="goblin" name="goblin"
-            bind:value={barracks.goblin} on:change="{updateGoblin}">
-    </label>
-    <label for="ice">Ice Level
-        <input type="text" id="ice" name="ice"
-            bind:value={barracks.ice} on:change="{updateIce}">
-    </label>
+    <div class="divTable">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">Level</div>
+                <div class="divTableCell">Talent</div>
+            </div>                
+            {#each troops as troop}
+                <div class="divTableRow">
+                    <div class="divTableCell">{troop.text}</div>
+                    <div class="divTableCell">
+                        <input type="text" id="{troop.text}talent" name="{troop.text}talent"
+                            bind:value="{troop.barracks.talent}">
+                    </div>
+                    <div class="divTableCell">
+                        <input type="text" id="{troop.text}level" name="{troop.text}level"
+                            bind:value="{troop.barracks.level}">
+                    </div>
+                </div>
+            {/each}       
+        </div>
+    </div>
 </div>
 <style>
-    div {
-        width: 100%;
-    }
     img {
         max-height: 100px;
         height: auto;
@@ -59,5 +40,23 @@
     }
     input {
         width: 50px;
+    }
+
+    .divTable{
+        display: table;
+        width: 100%;
+    }
+
+    .divTableRow {
+        display: table-row;
+    }
+
+    .divTableCell {
+        display: table-cell;
+        padding: 3px 10px;
+    }
+
+    .divTableBody {
+        display: table-row-group;
     }
 </style>

@@ -1,6 +1,6 @@
 #Svelte
-/node_modules/
-/public/build/
+node_modules/
+public/build/
 
 .DS_Store
 

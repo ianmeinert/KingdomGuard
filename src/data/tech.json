@@ -1,15 +1,11 @@
 {
     "dragon":"",
-    "academy":{
-        "archer":"",
-        "fire":"",
-        "goblin":"",
-        "ice":""
-    },
-    "barracks":{
-        "archer":"",
-        "fire":"",
-        "goblin":"",
-        "ice":""
-    }
+    "troops":[{
+        "text":"",
+        "academy":"",
+        "barracks": {
+            "talent":"",
+            "level":""
+        }
+    }]
 }
