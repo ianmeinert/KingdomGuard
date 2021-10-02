@@ -186,8 +186,12 @@
 
 	.hero {
 		float: left;
-		width: auto;
+		width: 250px;
 		padding: 25px;
+	}
+
+	.herocontainer {
+		min-height: 775px;
 	}
 
 	.herocontainer:after {
